@@ -1,0 +1,58 @@
+<!-- Navbar Component - Include this file in all pages -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="index.html" aria-label="Lux&Lov Home">
+      <i class="fas fa-crown me-2"></i>Lux&Lov
+    </a>
+
+    <!-- Toggle for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Dropdown Menu -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Women
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+            <li><a class="dropdown-item" href="collection.html?category=women-dresses">Dresses</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=women-jewellery">Jewellery</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=women-shoes">Shoes</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=women-bags">Bags</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menDropdown">
+            <li><a class="dropdown-item" href="collection.html?category=men-clothes">Clothes</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=men-shoes">Shoes</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=men-watches">Watches</a></li>
+            <li><a class="dropdown-item" href="collection.html?category=men-belts">Belts</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search bar -->
+      <form class="d-flex me-3" id="search-form" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search products..." id="search-input" aria-label="Search products">
+        <button class="btn btn-light" type="submit" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Cart -->
+      <a href="cart.html" class="btn btn-outline-light position-relative" aria-label="Shopping cart" title="View your shopping cart">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" aria-live="polite" aria-label="Items in cart">0</span>
+      </a>
+    </div>
+  </div>
+</nav>

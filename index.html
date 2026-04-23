@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lux&Lov - Premium online fashion, jewelry, and accessories store. Shop the latest trends with secure checkout and fast shipping.">
+  <meta name="keywords" content="fashion, clothing, jewelry, accessories, online shopping, women's fashion, men's fashion, luxury items">
+  <meta name="author" content="Lux&Lov">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luxandlov.com">
+  <meta property="og:title" content="Lux&Lov - Premium Fashion & Jewelry">
+  <meta property="og:description" content="Shop premium fashion, jewelry, and accessories. New collections daily with secure checkout and fast shipping.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:site_name" content="Lux&Lov">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lux&Lov - Premium Fashion & Jewelry">
+  <meta name="twitter:description" content="Shop premium fashion, jewelry, and accessories with secure checkout and fast shipping.">
+  <meta name="twitter:image" content="images/og-image.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://luxandlov.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lux&Lov",
+    "url": "https://luxandlov.com",
+    "logo": "https://luxandlov.com/images/logo.png",
+    "description": "Premium online shopping for fashion, jewelry, and accessories",
+    "sameAs": [
+      "https://www.facebook.com/luxandlov",
+      "https://www.instagram.com/luxandlov",
+      "https://www.twitter.com/luxandlov"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "support@luxandlov.com"
+    }
+  }
+  </script>
+  
+  <title>Lux&Lov - Premium Fashion, Jewelry & Accessories Online</title>
+</head>
+<body>
+  <div style="padding-top: 76px;"> <!-- Added padding to prevent content from being hidden by the fixed header -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="#">Lux&Lov</a>
+
+    <!-- Toggle for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Dropdown -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="womenDropdown">
+            Women
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/collection.html?category=women-dresses">Dresses</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=women-jewellery">Jewellery</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=women-shoes">Shoes</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=women-bags">Bags</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menDropdown">
+            Men
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/collection.html?category=men-clothes">Clothes</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=men-shoes">Shoes</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=men-watches">Watches</a></li>
+            <li><a class="dropdown-item" href="pages/collection.html?category=men-belts">Belts</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search bar -->
+      <form class="d-flex me-3" id="search-form">
+        <input class="form-control me-2" type="search" placeholder="Search" id="search-input">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+
+      <!-- Cart -->
+      <a href="pages/cart.html" class="btn btn-outline-dark position-relative" aria-label="Shopping cart" title="View shopping cart">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" aria-live="polite">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="container my-5">
+  <section class="row" id="product-list">
+    <!-- Products will be added dynamically by JS -->
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg text-light text-center p-4 mt-5" role="contentinfo">
+  <div class="mb-3">
+    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+    <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+  </div>
+  <p class="mb-0">&copy; 2025 Lux&Lov. All Rights Reserved.</p>
+</footer>
+<script src="js/search.js"></script>
+<script src="js/modules/Utils.js"></script>
+<script src="js/modules/CartManager.js"></script>
+<script src="js/modules/ProductManager.js"></script>
+<script src="js/modules/UIManager.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  if (typeof app !== 'undefined' && !app.initialized) {
+    app.initialize(products); // 'products' is assumed to be defined in products-data.js
+  }
+</script>
+<script src="js/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>
