@@ -1,0 +1,7 @@
+# Standard robots.txt for Lux&Lov E-Commerce
+User-agent: *
+Allow: /
+Disallow: /pages/cart.html
+Disallow: /pages/checkout.html
+
+Sitemap: https://luxandlov.com/sitemap.xml
